@@ -9,12 +9,12 @@
         "title": "Exploring the Role of Blood Glucose Prediction Technologies for Type 1 Diabetes Self-Management",
         "type": "UX Study + Prediction System",
         "volume": "1",
-        "year": "2024"
+        "year": "2024",
         "tags": [
-        "prediction",
-        "diabetes",
-        "interface",
-        "UX"
+          "prediction",
+          "diabetes",
+          "interface",
+          "UX"
     ]
   },
     "dinu2017": {
@@ -28,9 +28,9 @@
         "volume": "57",
         "year": "2017",
         "tags": [
-        "diet",
-        "vegetarian",
-        "health outcomes"
+          "diet",
+          "vegetarian",
+          "health outcomes"
     ]
   },
     "esposito2009": {
@@ -44,9 +44,9 @@
         "volume": "151",
         "year": "2009",
         "tags": [
-        "diet",
-        "Mediterranean",
-        "intervention"
+          "diet",
+          "Mediterranean",
+          "intervention"
     ]
   },
     "liu2022": {
@@ -59,10 +59,10 @@
         "type": "Survey",
         "volume": "22",
         "year": "2022",
-        "tags": [
-        "classification",
-        "taxonomy",
-        "resources"
+         "tags": [
+          "classification",
+          "taxonomy",
+          "resources"
     ]
   },
     "mcnabb2017": {
@@ -76,9 +76,9 @@
         "volume": "36",
         "year": "2017",
         "tags": [
-        "meta-review",
-        "survey of surveys",
-        "categorization"
+          "meta-review",
+          "survey of surveys",
+          "categorization"
     ]
   },
     "miotto2016": {
@@ -92,9 +92,9 @@
         "volume": "6",
         "year": "2016",
         "tags": [
-        "EHR",
-        "prediction",
-        "autoencoder"
+          "EHR",
+          "prediction",
+          "autoencoder"
     ]
   },
     "rees2019": {
@@ -108,8 +108,8 @@
         "volume": "38",
         "year": "2019",
         "tags": [
-        "classification",
-        "resources"
+          "classification",
+          "resources"
     ]
   },
     "scimone2024": {
@@ -123,9 +123,9 @@
         "volume": "1",
         "year": "2024",
         "tags": [
-        "glucose",
-        "diabetes",
-        "timeline"
+          "glucose",
+          "diabetes",
+          "timeline"
     ]
   },
     "tong2017": {
@@ -140,10 +140,10 @@
         "type": "Application",
         "year": "2017",
         "tags": [
-        "public health",
-        "map",
-        "treemap",
-        "geographic"
+          "public health",
+          "map",
+          "treemap",
+          "geographic"
     ]
   },
     "wang2022": {
@@ -157,9 +157,9 @@
         "volume": "41",
         "year": "2022",
         "tags": [
-        "EHR",
-        "classification",
-        "visual encoding"
+          "EHR",
+          "classification",
+          "visual encoding"
     ]
   }
 };
