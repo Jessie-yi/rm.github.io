@@ -1,43 +1,118 @@
 const tagCategories = {
   "type": {
-    "Survey": { "color": "#f39c12", "description": "Survey-based research" },
-    "Meta-Survey": { "color": "#e67e22", "description": "Meta-review of survey articles" },
-    "Meta-analysis": { "color": "#9b59b6", "description": "Quantitative meta-analysis of studies" },
-    "Technical Survey": { "color": "#1abc9c", "description": "Review of interactive systems or techniques" },
-    "Application": { "color": "#95a5a6", "description": "Applied case study in visualisation or healthcare" },
-    "Interactive System": { "color": "#2ecc71", "description": "Interactive system or visualisation prototype" },
-    "UX Study + Prediction System": { "color": "#34495e", "description": "System + User study" },
-    "Deep Learning (Autoencoder)": { "color": "#e74c3c", "description": "Deep learning-based predictive modelling" },
-    "RCT": { "color": "#3498db", "description": "Randomised Controlled Trial" }
+    "Survey": {
+      "color": "#1f77b4",
+      "description": "Survey paper"
+    },
+    "System": {
+      "color": "#2ca02c",
+      "description": "Interactive system"
+    },
+    "RCT": {
+      "color": "#d62728",
+      "description": "Randomized Controlled Trial"
+    },
+    "Meta-analysis": {
+      "color": "#9467bd",
+      "description": "Meta-analysis of studies"
+    },
+    "Technical Survey": {
+      "color": "#bcbd22",
+      "description": "Technical survey of tools or systems"
+    },
+    "Application": {
+      "color": "#17becf",
+      "description": "Applied method or system"
+    },
+    "UX Study + Prediction System": {
+      "color": "#ff7f0e",
+      "description": "Combined UX and ML system"
+    }
   },
-  "tags": {
-    "classification": { "color": "#9b59b6", "description": "Data classification task" },
-    "taxonomy": { "color": "#f39c12", "description": "Taxonomy-based organisation" },
-    "resources": { "color": "#d35400", "description": "List or overview of resources" },
-    "book analysis": { "color": "#8e44ad", "description": "Analysis of literature/books" },
-    "coverage": { "color": "#2980b9", "description": "Coverage of topics or domains" },
-    "education": { "color": "#27ae60", "description": "Educational usage or purpose" },
-    "meta-review": { "color": "#7f8c8d", "description": "Review of multiple reviews" },
-    "survey of surveys": { "color": "#e67e22", "description": "A collection of survey papers" },
-    "categorization": { "color": "#bdc3c7", "description": "Categorisation approach" },
-    "EHR": { "color": "#1abc9c", "description": "Electronic Health Records" },
-    "visual encoding": { "color": "#2c3e50", "description": "Encoding strategies for visualisation" },
-    "glucose": { "color": "#c0392b", "description": "Blood glucose metrics" },
-    "timeline": { "color": "#d35400", "description": "Temporal data visualisation" },
-    "UI": { "color": "#7f8c8d", "description": "User interface aspect" },
-    "public health": { "color": "#16a085", "description": "Public or population health focus" },
-    "map": { "color": "#2980b9", "description": "Geographic or spatial data" },
-    "treemap": { "color": "#f1c40f", "description": "Treemap visualisation" },
-    "geographic": { "color": "#27ae60", "description": "Geographic aspect" },
-    "prediction": { "color": "#8e44ad", "description": "Predictive modelling" },
-    "interface": { "color": "#2ecc71", "description": "System interface" },
-    "UX": { "color": "#34495e", "description": "User experience design or study" },
-    "autoencoder": { "color": "#e74c3c", "description": "Autoencoder architecture" },
-    "diet": { "color": "#f39c12", "description": "Diet-related intervention" },
-    "Mediterranean": { "color": "#3498db", "description": "Mediterranean diet focus" },
-    "intervention": { "color": "#9b59b6", "description": "Intervention-based study" },
-    "vegetarian": { "color": "#27ae60", "description": "Vegetarian dietary focus" },
-    "chronic disease": { "color": "#c0392b", "description": "Chronic disease outcomes" },
-    "health outcomes": { "color": "#8e44ad", "description": "Health impact and outcomes" }
+  "other": {
+    "EHR": {
+      "color": "#8c564b",
+      "description": "Electronic Health Record"
+    },
+    "diabetes": {
+      "color": "#e377c2",
+      "description": "Diabetes-related work"
+    },
+    "prediction": {
+      "color": "#7f7f7f",
+      "description": "Prediction-focused study"
+    },
+    "glucose": {
+      "color": "#aec7e8",
+      "description": "Glucose modeling"
+    },
+    "interface": {
+      "color": "#ffbb78",
+      "description": "User interface"
+    },
+    "timeline": {
+      "color": "#98df8a",
+      "description": "Timeline visualization"
+    },
+    "autoencoder": {
+      "color": "#c5b0d5",
+      "description": "Deep autoencoder"
+    },
+    "diet": {
+      "color": "#f7b6d2",
+      "description": "Diet and nutrition"
+    },
+    "Mediterranean": {
+      "color": "#c49c94",
+      "description": "Mediterranean diet"
+    },
+    "vegetarian": {
+      "color": "#dbdb8d",
+      "description": "Vegetarian/vegan diet"
+    },
+    "intervention": {
+      "color": "#9edae5",
+      "description": "Dietary intervention"
+    },
+    "chronic disease": {
+      "color": "#ff9896",
+      "description": "Chronic health outcomes"
+    },
+    "health outcomes": {
+      "color": "#c7c7c7",
+      "description": "Health outcome study"
+    },
+    "classification": {
+      "color": "#aec7e8",
+      "description": "Taxonomy or classification"
+    },
+    "taxonomy": {
+      "color": "#e7ba52",
+      "description": "Systematic grouping"
+    },
+    "resources": {
+      "color": "#d62728",
+      "description": "Surveyed tools/resources"
+    },
+    "map": {
+    "color": "#8dd3c7",
+    "description": "Map-based visualization technique"
+    },
+    "public health": {
+    "color": "#fb8072",
+    "description": "Healthcare domain data"
+    },
+    "treemap": {
+    "color": "#80b1d3",
+    "description": "Treemap layout visualization"
+    },
+    "geographic": {
+    "color": "#fdb462",
+    "description": "Geographic or spatial data"
+    },
+    "interface": {
+    "color": "#b3de69",
+    "description": "User Interface components"
+    }
   }
 };
