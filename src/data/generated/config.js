@@ -1,200 +1,43 @@
-const config = {
-  "categories": {
-    "type": [
-      "Survey",
-      "Meta-Survey",
-      "Technical Survey",
-      "Interactive System",
-      "Application",
-      "UX Study + Prediction System",
-      "Deep Learning (Autoencoder)",
-      "RCT",
-      "Meta-analysis"
-    ],
-    "method": [
-      "Survey",
-      "Meta-Survey",
-      "Technical Survey",
-      "Interactive System",
-      "Application",
-      "UX Study + Prediction System",
-      "Deep Learning (Autoencoder)",
-      "RCT",
-      "Meta-analysis"
-    ],
-    "evaluation": [
-      "None",
-      "User Evaluation",
-      "User Study",
-      "Quantitative (ROC, AUC)",
-      "Survival Analysis (Kaplan-Meier)",
-      "Quantitative (Forest Plot)"
-    ]
+const tagCategories = {
+  "type": {
+    "Survey": { "color": "#f39c12", "description": "Survey-based research" },
+    "Meta-Survey": { "color": "#e67e22", "description": "Meta-review of survey articles" },
+    "Meta-analysis": { "color": "#9b59b6", "description": "Quantitative meta-analysis of studies" },
+    "Technical Survey": { "color": "#1abc9c", "description": "Review of interactive systems or techniques" },
+    "Application": { "color": "#95a5a6", "description": "Applied case study in visualisation or healthcare" },
+    "Interactive System": { "color": "#2ecc71", "description": "Interactive system or visualisation prototype" },
+    "UX Study + Prediction System": { "color": "#34495e", "description": "System + User study" },
+    "Deep Learning (Autoencoder)": { "color": "#e74c3c", "description": "Deep learning-based predictive modelling" },
+    "RCT": { "color": "#3498db", "description": "Randomised Controlled Trial" }
   },
-  "entries": {
-    "liu2022": {
-      "type": [
-        "Survey"
-      ],
-      "method": [
-        "Survey"
-      ],
-      "evaluation": [
-        "None"
-      ],
-      "tags": [
-        "classification",
-        "taxonomy",
-        "resources"
-      ]
-    },
-    "rees2019": {
-      "type": [
-        "Survey"
-      ],
-      "method": [
-        "Survey"
-      ],
-      "evaluation": [
-        "None"
-      ],
-      "tags": [
-        "book analysis",
-        "coverage",
-        "education"
-      ]
-    },
-    "mcnabb2017": {
-      "type": [
-        "Meta-Survey"
-      ],
-      "method": [
-        "Meta-Survey"
-      ],
-      "evaluation": [
-        "None"
-      ],
-      "tags": [
-        "meta-review",
-        "survey of surveys",
-        "categorization"
-      ]
-    },
-    "wang2022": {
-      "type": [
-        "Technical Survey"
-      ],
-      "method": [
-        "Technical Survey"
-      ],
-      "evaluation": [
-        "None"
-      ],
-      "tags": [
-        "EHR",
-        "classification",
-        "visual encoding"
-      ]
-    },
-    "scimone2024": {
-      "type": [
-        "Interactive System"
-      ],
-      "method": [
-        "Interactive System"
-      ],
-      "evaluation": [
-        "User Evaluation"
-      ],
-      "tags": [
-        "diabetes",
-        "glucose",
-        "timeline",
-        "UI"
-      ]
-    },
-    "tong2017": {
-      "type": [
-        "Application"
-      ],
-      "method": [
-        "Application"
-      ],
-      "evaluation": [
-        "None"
-      ],
-      "tags": [
-        "public health",
-        "map",
-        "treemap",
-        "geographic"
-      ]
-    },
-    "barth2024": {
-      "type": [
-        "UX Study + Prediction System"
-      ],
-      "method": [
-        "UX Study + Prediction System"
-      ],
-      "evaluation": [
-        "User Study"
-      ],
-      "tags": [
-        "prediction",
-        "diabetes",
-        "interface",
-        "UX"
-      ]
-    },
-    "miotto2016": {
-      "type": [
-        "Deep Learning (Autoencoder)"
-      ],
-      "method": [
-        "Deep Learning (Autoencoder)"
-      ],
-      "evaluation": [
-        "Quantitative (ROC, AUC)"
-      ],
-      "tags": [
-        "EHR",
-        "prediction",
-        "autoencoder"
-      ]
-    },
-    "esposito2009": {
-      "type": [
-        "RCT"
-      ],
-      "method": [
-        "RCT"
-      ],
-      "evaluation": [
-        "Survival Analysis (Kaplan-Meier)"
-      ],
-      "tags": [
-        "diet",
-        "Mediterranean",
-        "diabetes",
-        "intervention"
-      ]
-    },
-    "dinu2017": {
-      "type": [
-        "Meta-analysis"
-      ],
-      "method": [
-        "Meta-analysis"
-      ],
-      "evaluation": [
-        "Quantitative (Forest Plot)"
-      ],
-      "tags": [
-        "vegetarian",
-        "chronic disease",
-        "health outcomes"
-      ]
-    }
+  "tags": {
+    "classification": { "color": "#9b59b6", "description": "Data classification task" },
+    "taxonomy": { "color": "#f39c12", "description": "Taxonomy-based organisation" },
+    "resources": { "color": "#d35400", "description": "List or overview of resources" },
+    "book analysis": { "color": "#8e44ad", "description": "Analysis of literature/books" },
+    "coverage": { "color": "#2980b9", "description": "Coverage of topics or domains" },
+    "education": { "color": "#27ae60", "description": "Educational usage or purpose" },
+    "meta-review": { "color": "#7f8c8d", "description": "Review of multiple reviews" },
+    "survey of surveys": { "color": "#e67e22", "description": "A collection of survey papers" },
+    "categorization": { "color": "#bdc3c7", "description": "Categorisation approach" },
+    "EHR": { "color": "#1abc9c", "description": "Electronic Health Records" },
+    "visual encoding": { "color": "#2c3e50", "description": "Encoding strategies for visualisation" },
+    "glucose": { "color": "#c0392b", "description": "Blood glucose metrics" },
+    "timeline": { "color": "#d35400", "description": "Temporal data visualisation" },
+    "UI": { "color": "#7f8c8d", "description": "User interface aspect" },
+    "public health": { "color": "#16a085", "description": "Public or population health focus" },
+    "map": { "color": "#2980b9", "description": "Geographic or spatial data" },
+    "treemap": { "color": "#f1c40f", "description": "Treemap visualisation" },
+    "geographic": { "color": "#27ae60", "description": "Geographic aspect" },
+    "prediction": { "color": "#8e44ad", "description": "Predictive modelling" },
+    "interface": { "color": "#2ecc71", "description": "System interface" },
+    "UX": { "color": "#34495e", "description": "User experience design or study" },
+    "autoencoder": { "color": "#e74c3c", "description": "Autoencoder architecture" },
+    "diet": { "color": "#f39c12", "description": "Diet-related intervention" },
+    "Mediterranean": { "color": "#3498db", "description": "Mediterranean diet focus" },
+    "intervention": { "color": "#9b59b6", "description": "Intervention-based study" },
+    "vegetarian": { "color": "#27ae60", "description": "Vegetarian dietary focus" },
+    "chronic disease": { "color": "#c0392b", "description": "Chronic disease outcomes" },
+    "health outcomes": { "color": "#8e44ad", "description": "Health impact and outcomes" }
   }
 };
