@@ -1,11 +1,14 @@
-﻿const generatedBibEntries = {
+const generatedBibEntries = {
     "barth2024": {
         "author": "C.-M. Barth and J. Bernard and E. M. Huang",
         "booktitle": "Proceedings of the ACM on Human-Computer Interaction (CSCW)",
         "doi": "10.1145/3613904.3642234",
         "title": "Exploring the Role of Blood Glucose Prediction Technologies for Type 1 Diabetes Self-Management",
         "type": "inproceedings",
-        "year": "2024"
+        "year": "2024",
+        "number": "1",
+        "volume": "1",
+        "pages": "1--10"
     },
     "dinu2017": {
         "author": "M. Dinu and R. Abbate and G. F. Gensini and A. Casini and F. Sofi",
@@ -59,7 +62,8 @@
         "title": "Deep Patient: An Unsupervised Representation to Predict the Future of Patients from the Electronic Health Records",
         "type": "article",
         "volume": "6",
-        "year": "2016"
+        "year": "2016",
+        "number": "1"
     },
     "rees2019": {
         "author": "D. Rees and R. S. Laramee",
@@ -78,7 +82,10 @@
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
         "title": "Marjorie: Visualizing Type 1 Diabetes Data to Support Pattern Exploration",
         "type": "article",
-        "year": "2024"
+        "year": "2024",
+        "number": "1",
+        "volume": "1",
+        "pages": "1--10"
     },
     "tong2017": {
         "author": "C. Tong and R. Roberts and R. S. Laramee and D. Thayer and D. Berridge",
@@ -87,7 +94,9 @@
         "pages": "61--70",
         "title": "Cartographic Treemaps for the Visualization of Public Healthcare Data",
         "type": "inproceedings",
-        "year": "2017"
+        "year": "2017",
+        "number": "1",
+        "volume": "1"
     },
     "wang2022": {
         "author": "Q. Wang and R. S. Laramee",
