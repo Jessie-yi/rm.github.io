@@ -110,9 +110,13 @@ const tagCategories = {
     "color": "#fdb462",
     "description": "Geographic or spatial data"
     },
-    "interface": {
-    "color": "#b3de69",
-    "description": "User Interface components"
+    "meta-review": {
+    "color": "#c49c94",
+    "description": "Review of survey papers"
+    },
+    "visual encoding": {
+    "color": "#ffcc99",
+    "description": "Visual representation of data attributes"
     }
   }
 };
