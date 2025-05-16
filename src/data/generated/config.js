@@ -117,6 +117,18 @@ const tagCategories = {
     "visual encoding": {
     "color": "#ffcc99",
     "description": "Visual representation of data attributes"
+    },
+    "UX": {
+    "color": "#e377c2",
+    "description": "User experience study"
+    },
+    "survey of surveys": {
+    "color": "#bcbd22",
+    "description": "Survey papers that review other surveys"
+    },
+    "categorization": {
+    "color": "#d62728",
+    "description": "Paper focuses on categorization or classification schemes"
     }
   }
 };
