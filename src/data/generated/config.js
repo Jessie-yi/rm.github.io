@@ -129,6 +129,18 @@ const tagCategories = {
     "categorization": {
     "color": "#d62728",
     "description": "Paper focuses on categorization or classification schemes"
+    },
+    "book analysis": {
+    "color": "#a6cee3",
+    "description": "Analysis of information visualization books"
+    },
+    "coverage": {
+    "color": "#1f78b4",
+    "description": "Thematic or topical coverage of visual resources"
+    },
+    "education": {
+    "color": "#b2df8a",
+    "description": "Educational use of visualizations"
     }
   }
 };
