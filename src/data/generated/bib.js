@@ -105,6 +105,7 @@
         "keywords": "type:Application; other:public health; other:map; other:treemap; other:geographic",
         "pages": "29--42",
         "publisher": "The Eurographics Association",
+        "series": "Eurographics Workshop Series",
         "title": "Cartographic Treemaps for the Visualization of Public Healthcare Data",
         "type": "inproceedings",
         "year": "2017"
