@@ -7,6 +7,7 @@
         "number": "1",
         "pages": "1--10",
         "publisher": "ACM",
+        "series": "PACMHCI",
         "title": "Exploring the Role of Blood Glucose Prediction Technologies for Type 1 Diabetes Self-Management",
         "type": "inproceedings",
         "volume": "1",
